@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Proposal</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Proposal_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Proposal_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Proposal_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Proposal_files/libs/quarto-html/popper.min.js"></script>
+<script src="Proposal_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Proposal_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Proposal_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Proposal_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Proposal_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Proposal_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Proposal_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Proposal</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="project-02-proposal" class="level1">
+<h1>Project 02 Proposal: <your project="" title=""></your></h1>
+<p><strong>Team members:</strong> Joseph Callaway</p>
+<p>See the <a href="https://data385.github.io/project/proj02_wholegame.html">Project 02 instructions</a> for what goes in each section. Bullet points are great. Put any images in an <code>img/</code> folder.</p>
+<section id="problem-statement" class="level2">
+<h2 class="anchored" data-anchor-id="problem-statement">1. Problem statement</h2>
+<p><em>Who has the problem, what decision or need it involves, why it matters, and what you expect to find.</em></p>
+<p>The problem is crime but how do people avoid being victims and are there other factors that make someone more likely to be a victim. Ultimately it matters because cities can be dangerous places odds are people do not want to be on the receiving end of any foul play. My expectations are age, sex, location and offense type and maybe time of year might be revealing in the answering of this question.</p>
+</section>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">2. Research question</h2>
+<p><em>A clear association between a response and at least one predictor variable.</em></p>
+<p>What factors such as age,sex, area, corrolate with likely-hood of being a victim of crimes in Los Angeles and are there any particular crimes that correlate more with one of these factors?</p>
+</section>
+<section id="data-acquisition" class="level2">
+<h2 class="anchored" data-anchor-id="data-acquisition">3. Data acquisition</h2>
+<p><em>In 1-2 sentences, describe the data you intend to collect and how you will get it.</em></p>
+<section id="a.-confirm-viability" class="level3">
+<h3 class="anchored" data-anchor-id="a.-confirm-viability">a. Confirm viability</h3>
+<p><em>Scraping: summarize the “Before You Scrape” checklist. Downloading: citation, link to the documentation, and how the data were originally collected. Collecting it yourself: how you are collecting it and where you are storing it.</em></p>
+</section>
+<section id="b.-variables-of-interest" class="level3">
+<h3 class="anchored" data-anchor-id="b.-variables-of-interest">b. Variables of interest</h3>
+<p><em>If you do not have the data yet, list the variables you plan to collect and the exact question text. Include 1) the variable name, 2) data type 3) description. Use bullet points.</em></p>
+<p>3.Data has bee sourced from data.gov sourced from these particular pages: https://catalog.data.gov/dataset/crime-data-from-2020-to-present?from_hint=eyJxIjoibG9zIGFuZ2VsZXMgY3JpbWUifQ%3D%3D https://catalog.data.gov/dataset/crimes-one-year-prior-to-present https://catalog.data.gov/dataset/nypd-arrest-data-year-to-date?from_hint=eyJxIjoiY3JpbWUgIiwic29ydCI6InJlbGV2YW5jZSIsIm9yZ190eXBlIjoiQ2l0eSBHb3Zlcm5tZW50Iiwib3JnX3NsdWciOiJueWMtbnkifQ%3D%3D The sites robots.txt poses no issue with downloading this set. The variables I believe to be of interest are Area Name, Vict Age and Sex, Premise Desc, Status Desc, and DATE OCC.</p>
+</section>
+</section>
+<section id="data-example" class="level2">
+<h2 class="anchored" data-anchor-id="data-example">4. Data example</h2>
+<p><em>Scraping: a URL and an annotated screenshot. Downloading: a link to your rendered <code>data_management.pdf</code> with <code>glimpse()</code>. Collecting: a screenshot of one example row.</em></p>
+<p>Please Note: The csv files themselves are not included in the repro because they are too large and break git push,</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(<span class="fu">read.csv</span>(<span class="st">"data/LosAngeles_2020-2024_Crime_data.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 1,004,894
+Columns: 28
+$ DR_NO          &lt;int&gt; 211507896, 201516622, 240913563, 210704711, 201418201, …
+$ Date.Rptd      &lt;chr&gt; "2021 Apr 11 12:00:00 AM", "2020 Oct 21 12:00:00 AM", "…
+$ DATE.OCC       &lt;chr&gt; "2020 Nov 07 12:00:00 AM", "2020 Oct 18 12:00:00 AM", "…
+$ TIME.OCC       &lt;int&gt; 845, 1845, 1240, 1310, 1830, 1210, 1350, 1400, 1200, 90…
+$ AREA           &lt;int&gt; 15, 15, 9, 7, 14, 4, 3, 11, 17, 21, 6, 20, 21, 17, 14, …
+$ AREA.NAME      &lt;chr&gt; "N Hollywood", "N Hollywood", "Van Nuys", "Wilshire", "…
+$ Rpt.Dist.No    &lt;int&gt; 1502, 1521, 933, 782, 1454, 429, 396, 1133, 1729, 2196,…
+$ Part.1.2       &lt;int&gt; 2, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 1…
+$ Crm.Cd         &lt;int&gt; 354, 230, 354, 331, 420, 354, 354, 812, 354, 354, 812, …
+$ Crm.Cd.Desc    &lt;chr&gt; "THEFT OF IDENTITY", "ASSAULT WITH DEADLY WEAPON, AGGRA…
+$ Mocodes        &lt;chr&gt; "0377", "0416 0334 2004 1822 1414 0305 0319 0400", "037…
+$ Vict.Age       &lt;int&gt; 31, 32, 30, 47, 63, 35, 21, 14, 43, 57, 13, 34, 0, 0, 3…
+$ Vict.Sex       &lt;chr&gt; "M", "M", "M", "F", "M", "M", "F", "F", "M", "M", "M", …
+$ Vict.Descent   &lt;chr&gt; "H", "H", "W", "A", "H", "B", "B", "H", "W", "W", "H", …
+$ Premis.Cd      &lt;int&gt; 501, 102, 501, 101, 103, 502, 501, 121, 501, 501, 501, …
+$ Premis.Desc    &lt;chr&gt; "SINGLE FAMILY DWELLING", "SIDEWALK", "SINGLE FAMILY DW…
+$ Weapon.Used.Cd &lt;int&gt; NA, 200, NA, NA, NA, NA, NA, 500, NA, NA, 400, NA, NA, …
+$ Weapon.Desc    &lt;chr&gt; "", "KNIFE WITH BLADE 6INCHES OR LESS", "", "", "", "",…
+$ Status         &lt;chr&gt; "IC", "IC", "IC", "IC", "IC", "IC", "IC", "AO", "IC", "…
+$ Status.Desc    &lt;chr&gt; "Invest Cont", "Invest Cont", "Invest Cont", "Invest Co…
+$ Crm.Cd.1       &lt;int&gt; 354, 230, 354, 331, 420, 354, 354, 812, 354, 354, 812, …
+$ Crm.Cd.2       &lt;int&gt; NA, NA, NA, NA, NA, NA, NA, 860, NA, NA, 860, NA, NA, N…
+$ Crm.Cd.3       &lt;int&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ Crm.Cd.4       &lt;int&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ LOCATION       &lt;chr&gt; "7800    BEEMAN                       AV", "ATOLL      …
+$ Cross.Street   &lt;chr&gt; "", "N  GAULT", "", "", "", "", "", "", "", "", "", "",…
+$ LAT            &lt;dbl&gt; 34.2124, 34.1993, 34.1847, 34.0339, 33.9813, 34.0830, 3…
+$ LON            &lt;dbl&gt; -118.4092, -118.4203, -118.4509, -118.3747, -118.4350, …</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(<span class="fu">read.csv</span>(<span class="st">"data/NYPD_crime_data.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 213,982
+Columns: 19
+$ ARREST_KEY        &lt;int&gt; 318213896, 318216623, 318237144, 318244835, 31825760…
+$ ARREST_DATE       &lt;chr&gt; "01/01/2026", "01/01/2026", "01/01/2026", "01/02/202…
+$ PD_CD             &lt;int&gt; 105, 105, 105, 105, 105, 109, 922, 490, 113, 515, 77…
+$ PD_DESC           &lt;chr&gt; "STRANGULATION 1ST", "STRANGULATION 1ST", "STRANGULA…
+$ KY_CD             &lt;int&gt; 106, 106, 106, 106, 106, 106, 348, 232, 344, 117, 12…
+$ OFNS_DESC         &lt;chr&gt; "FELONY ASSAULT", "FELONY ASSAULT", "FELONY ASSAULT"…
+$ LAW_CODE          &lt;chr&gt; "PL 1211200", "PL 1211200", "PL 1211200", "PL 121120…
+$ LAW_CAT_CD        &lt;chr&gt; "F", "F", "F", "F", "F", "F", "M", "M", "M", "F", "F…
+$ ARREST_BORO       &lt;chr&gt; "K", "M", "K", "Q", "K", "Q", "B", "B", "B", "M", "M…
+$ ARREST_PRECINCT   &lt;int&gt; 94, 24, 61, 116, 73, 116, 44, 47, 49, 33, 18, 73, 84…
+$ JURISDICTION_CODE &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0…
+$ AGE_GROUP         &lt;chr&gt; "18-24", "45-64", "45-64", "25-44", "25-44", "18-24"…
+$ PERP_SEX          &lt;chr&gt; "M", "M", "M", "M", "M", "M", "F", "M", "M", "M", "M…
+$ PERP_RACE         &lt;chr&gt; "BLACK", "BLACK", "WHITE", "BLACK", "BLACK", "BLACK"…
+$ X_COORD_CD        &lt;int&gt; 996856, 992883, 998271, 1044018, 1008227, 1057634, 1…
+$ Y_COORD_CD        &lt;int&gt; 200080, 231212, 156939, 182147, 183789, 177815, 2452…
+$ Latitude          &lt;dbl&gt; 40.71585, 40.80130, 40.59744, 40.66643, 40.67111, 40…
+$ Longitude         &lt;dbl&gt; -73.95453, -73.96882, -73.94951, -73.78456, -73.9135…
+$ Location          &lt;chr&gt; "POINT (-73.954527 40.715851)", "POINT (-73.968816 4…</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(<span class="fu">read.csv</span>(<span class="st">"data/Chicago_crime_data.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 230,561
+Columns: 17
+$ CASE.                   &lt;chr&gt; "JJ483819", "JJ484130", "JJ490070", "JJ489182"…
+$ DATE..OF.OCCURRENCE     &lt;chr&gt; "11/10/2025 05:20:00 AM", "11/10/2025 05:30:00…
+$ BLOCK                   &lt;chr&gt; "009XX N RIDGEWAY AVE", "015XX W CULLERTON ST"…
+$ X.IUCR                  &lt;chr&gt; "0497", "0460", "0610", "1581", "1320", "0810"…
+$ X.PRIMARY.DESCRIPTION   &lt;chr&gt; "BATTERY", "BATTERY", "BURGLARY", "SEX OFFENSE…
+$ X.SECONDARY.DESCRIPTION &lt;chr&gt; "AGGRAVATED DOMESTIC BATTERY - OTHER DANGEROUS…
+$ X.LOCATION.DESCRIPTION  &lt;chr&gt; "APARTMENT", "APARTMENT", "RESTAURANT", "RESID…
+$ ARREST                  &lt;chr&gt; "N", "N", "N", "N", "N", "N", "N", "N", "N", "…
+$ DOMESTIC                &lt;chr&gt; "Y", "N", "N", "N", "N", "N", "N", "N", "N", "…
+$ BEAT                    &lt;int&gt; 1112, 1235, 1133, 1722, 734, 1223, 512, 213, 7…
+$ WARD                    &lt;int&gt; 27, 25, 24, 39, 17, 27, 9, 3, 17, 34, 9, 41, 2…
+$ FBI.CD                  &lt;chr&gt; "04B", "08B", "05", "17", "14", "06", "06", "1…
+$ X.COORDINATE            &lt;int&gt; 1151211, 1166451, 1153720, 1148587, 1168018, 1…
+$ Y.COORDINATE            &lt;int&gt; 1906080, 1890500, 1894499, 1929653, 1855675, 1…
+$ LATITUDE                &lt;dbl&gt; 41.89817, 41.85511, 41.86634, 41.96291, 41.759…
+$ LONGITUDE               &lt;dbl&gt; -87.72006, -87.66453, -87.71115, -87.72909, -8…
+$ LOCATION                &lt;chr&gt; "(41.898170565, -87.720061322)", "(41.85510521…</code></pre>
+</div>
+</div>
+</section>
+<section id="eda" class="level2">
+<h2 class="anchored" data-anchor-id="eda">5. EDA</h2>
+<p><em>The techniques and functions you plan to use to import, wrangle, visualize, and explore the data, and why each is needed.</em></p>
+<p>In terms of techniques I will use, I am anticipating using ymd() with the current set of data I have and potentially parse_number() depending on subsequent sets I shall acquire. Wrangling functions like filter(), select(), arrange(), mutate() and count() I can almost guarantee shall be a used in one way or another. If not all then most. Recode, I I could see case_when statement to modify the data to my specifications. Factors I could maybe see myself using if I wanted to label severity of crimes but I don’t see myself using those as much. Join, assuming the datasets are sufficient on their own I don’t see myself using these as much. Reshape is a simliar story as well. Functions are something I could potentially see myself using as well. ggplot is a given as well as it’s visualizations of distribution will prove useful.</p>
+</section>
+<section id="modeling" class="level2">
+<h2 class="anchored" data-anchor-id="modeling">6. Modeling</h2>
+<p><em>The models you plan to use, your response and predictor variables, and why the models fit your research question.</em></p>
+<p>Some of the variables I am using are going to be factorial but variables such as age and date might be compatible with a linear model as those shall actively show change over time. date might be tricky because I can imagine peaks and valleys IF season does have a factor. Explanatory variables include sex,age, premise description, location and response variable is a row on the dataset.</p>
+</section>
+<section id="communicate" class="level2">
+<h2 class="anchored" data-anchor-id="communicate">7. Communicate</h2>
+<p><em>How you plan to present your results (website, poster, or short slide presentation).</em></p>
+<p>I intend to communicate results via a website, it will allow the results of each individual city to show assuming there are significant differences and leave other pages for comparison open</p>
+</section>
+<section id="llm-disclaimer" class="level2">
+<h2 class="anchored" data-anchor-id="llm-disclaimer">8. LLM disclaimer</h2>
+<p><em>Whether and how you will use AI tools: the specific tool, its use, and your data protection methods. If you won’t use any, say so.</em></p>
+<p>I hope to not use LLMs (Coding agents are counter productive to me learning Rstudio so they are a massive no) but if I cannot find a solution to a given problem it shall be my last result to find an issue to a problem as a browser search serves the same function for me. If I am going to, I shall try and make an effort to mark any instances of LLM’s.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
