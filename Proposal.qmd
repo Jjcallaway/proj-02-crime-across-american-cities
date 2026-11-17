@@ -1,6 +1,6 @@
 ---
 title: "Proposal"
-format: html
+format: pdf
 ---
 
 # Project 02 Proposal: <your project title>
