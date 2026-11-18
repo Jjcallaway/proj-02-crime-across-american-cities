@@ -39,6 +39,8 @@ The sites robots.txt poses no issue with downloading this set. The variables I b
 
 _Scraping: a URL and an annotated screenshot. Downloading: a link to your rendered `data_management.pdf` with `glimpse()`. Collecting: a screenshot of one example row._
 linking to a Quarto Document Render to show the Glimpses of currently collected data
+
+
 see[here]("Proposal.pdf")
 
 ## 5. EDA
