@@ -56,7 +56,7 @@ In terms of techniques I will use, I am anticipating using ymd() with the curren
 
 _The models you plan to use, your response and predictor variables, and why the models fit your research question._
 
-Some of the variables I am using are going to be factorial but variables such as age and date might be compatible with a linear model as those shall actively show change over time. date might be tricky because I can imagine peaks and valleys IF season does have a factor. Explanatory variables include sex,age, premise description, location and response variable is a row on the dataset.
+Some of the variables I am using are going to be factorial but variables such as age and date might be compatible with a linear model as those shall actively show change over time and if for any reason there are far too many datapoints I will see if log model will work better. Date might be tricky because I can imagine peaks and valleys. If that proves to be the case I will transition it to a factorical variable for month. Explanatory variables include sex,age, premise description, location and response variable is a row on the dataset.
 
 ## 7. Communicate
 
