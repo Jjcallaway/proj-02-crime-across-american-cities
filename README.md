@@ -41,7 +41,7 @@ _Scraping: a URL and an annotated screenshot. Downloading: a link to your render
 linking to a Quarto Document Render to show the Glimpses of currently collected data
 
 
-see[here]("Proposal.pdf")
+see  [here]("Proposal.pdf")
 
 ## 5. EDA
 
