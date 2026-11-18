@@ -43,6 +43,8 @@ linking to a Quarto Document Render to show the Glimpses of currently collected 
 
 see  [here]("Proposal.pdf")
 
+if link is broken please check repro files for Proposal.pdf and skip to part 4
+
 ## 5. EDA
 
 _The techniques and functions you plan to use to import, wrangle, visualize, and explore the data, and why each is needed._
