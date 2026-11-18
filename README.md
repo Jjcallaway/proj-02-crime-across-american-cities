@@ -14,7 +14,7 @@ The problem is crime but how do people avoid being victims and are there other f
 
 _A clear association between a response and at least one predictor variable._
 
-What factors such as age,sex, area, corrolate with likely-hood of being a victim of crimes in Los Angeles and are there any particular crimes that correlate more with one of these factors?
+What factors such as age,sex, area, corrolate with likely-hood of being a victim of crimes in Los Angeles, New York, and Chicago and are there any particular crimes that correlate more with one of these factors?
 
 ## 3. Data acquisition
 
@@ -30,10 +30,11 @@ _Scraping: summarize the "Before You Scrape" checklist. Downloading: citation, l
 
 _If you do not have the data yet, list the variables you plan to collect and the exact question text. Include 1) the variable name, 2) data type 3) description. Use bullet points._
 
-3.Data has bee sourced from data.gov sourced from these particular pages: https://catalog.data.gov/dataset/crime-data-from-2020-to-present?from_hint=eyJxIjoibG9zIGFuZ2VsZXMgY3JpbWUifQ%3D%3D
+a.Data has bee sourced from data.gov sourced from these particular pages: https://catalog.data.gov/dataset/crime-data-from-2020-to-present?from_hint=eyJxIjoibG9zIGFuZ2VsZXMgY3JpbWUifQ%3D%3D
 https://catalog.data.gov/dataset/crimes-one-year-prior-to-present
 https://catalog.data.gov/dataset/nypd-arrest-data-year-to-date?from_hint=eyJxIjoiY3JpbWUgIiwic29ydCI6InJlbGV2YW5jZSIsIm9yZ190eXBlIjoiQ2l0eSBHb3Zlcm5tZW50Iiwib3JnX3NsdWciOiJueWMtbnkifQ%3D%3D
-The sites robots.txt poses no issue with downloading this set. The variables I believe to be of interest are Area Name, Vict Age and Sex, Premise Desc, Status Desc, and DATE OCC.
+
+b.The sites robots.txt poses no issue with downloading this set. The variables I believe to be of interest are Area Name, Vict Age and Sex, Premise Desc, Status Desc, and DATE OCC.
 
 ## 4. Data example
 
